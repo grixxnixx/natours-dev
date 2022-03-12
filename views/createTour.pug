@@ -1,0 +1,30 @@
+extends base
+
+block content
+  main.main
+    h2.heading-secondary.text-center Create New Tour
+    form.form-tour(action)
+      .form-tour__group.mar-top-md
+        label(for='tour-name') Tour name
+        input#tour-name.form-tour__input(type='text' required)
+      .form-tour__group.mar-top-md
+        label(for='tour-price') Tour price
+        input#tour-price.form-tour__input(type='number' required)
+      .form-tour__group
+        label(for='tour-duration') Tour duration
+        input#tour-duration.form-tour__input(type='number' required)
+      .form-tour__group
+        label(for='tour-maxGroupSize') Tour maxGroupSize
+        input#tour-maxGroupSize.form-tour__input(type='number' required)
+      .form-tour__group
+        label(for='tour-summary') Tour summary
+        input#tour-summary.form-tour__input(type='text' required)
+      .form-tour__group
+        label(for='tour-description') Tour description
+        textarea#tour-description(name='form-tour-description' cols='30' rows='1' required)
+      .form-tour__group
+        label(for='tour-imageCover') Tour imageCover
+        input#tour-imageCover.form-tour__input(type='file' required accept='image/*')
+      .form-tour__group
+        label(for='tour-images') Tour images (max 3 images accepted)
+        input#tour-images.form-tour__input(type='file' required accept='image/*' multiple)
