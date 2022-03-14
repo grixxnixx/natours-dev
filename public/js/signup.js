@@ -5,7 +5,7 @@ import axios from "axios";
 
 export const signup = async (name, email, password, passwordConfrim) => {
   try {
-    const res = await axios.post("http://127.0.0.1:8000/api/v1/users/signup", {
+    const res = await axios.post("/api/v1/users/signup", {
       name: name,
       email: email,
       password: password,
